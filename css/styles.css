@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    font-weight: bold;
+  }
+  
+  footer {
+    font-size: 0.9rem;
+  }
+  
+  .status-update {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+  }
+  
+  .status-update.fade {
+    opacity: 0;
+  }
+  

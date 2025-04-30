@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monitoreo de Vehículo IoT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container my-4">
+    <h1 class="text-center mb-4">Monitoreo de Vehículo IoT</h1>
+    
+    <h4 id="currentStatus" class="text-center text-primary mb-4 status-update">Estado actual: Cargando...</h4>
+
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered align-middle text-center">
+        <thead class="table-dark">
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>IP</th>
+            <th>Estado</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody id="deviceTableBody">
+          <!-- Aquí se insertarán los datos -->
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="text-center mt-5">
+      <p class="text-muted">Desarrollado por Mazapan</p>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
