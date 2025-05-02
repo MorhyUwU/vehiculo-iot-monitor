@@ -8,9 +8,12 @@ async function fetchDeviceData() {
     const response = await fetch(API_URL);
     if (!response.ok) throw new Error("Error al consultar la API");
 
-    const data = await response.json();
-    updateTable(data);
-    updateStatus(data[0]?.status || "Sin datos");
+   const data = await response.json();
+console.log("Respuesta de la API:", data); // 👈 Útil para verificar
+const devicesArray = Array.isArray(data) ? data : data.devices;
+updateTable(devicesArray);
+updateStatus(devicesArray[0]?.status || "Sin datos");
+
   } catch (error) {
     console.error("Error al cargar datos:", error);
   }
