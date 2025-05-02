@@ -19,3 +19,49 @@ body {
     opacity: 0;
   }
   
+  :root {
+    --space-cadet: #22223b;
+    --ultra-violet: #4a4e69;
+    --rose-quartz: #9a8c98;
+    --pale-dogwood: #c9ada7;
+    --isabelline: #f2e9e4;
+  }
+  
+  /* Fondo general de tabla */
+  .custom-table {
+    background-color: var(--isabelline);
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  
+  /* Encabezado */
+  .custom-table thead {
+    background-color: var(--space-cadet);
+    color: var(--isabelline);
+  }
+  
+  /* Celdas */
+  .custom-table td,
+  .custom-table th {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  /* Filas alternadas */
+  .custom-table tbody tr:nth-child(odd) {
+    background-color: var(--pale-dogwood);
+  }
+  
+  .custom-table tbody tr:nth-child(even) {
+    background-color: var(--rose-quartz);
+  }
+  
+  /* Hover */
+  .custom-table tbody tr:hover {
+    background-color: var(--ultra-violet);
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  
