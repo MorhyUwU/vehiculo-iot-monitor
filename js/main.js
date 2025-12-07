@@ -29,7 +29,6 @@ function updateTable(devices) {
       <td>${device.name}</td>
       <td>${device.ip}</td>
       <td>${device.status}</td>
-      <td>${device.date}</td>
     `;
     tableBody.appendChild(row);
   });
@@ -47,5 +46,6 @@ function updateStatus(newStatus) {
 // Ejecutar al inicio y cada 2 segundos
 fetchDeviceData();
 setInterval(fetchDeviceData, 2000);
+
 
 
