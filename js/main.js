@@ -1,4 +1,4 @@
-const API_URL = "http://3.236.218.193/api/assets/recent";
+const API_URL = "http://3.236.218.193:80/api/assets/recent";
 const tableBody = document.getElementById("deviceTableBody");
 const currentStatus = document.getElementById("currentStatus");
 
@@ -47,4 +47,5 @@ function updateStatus(newStatus) {
 // Ejecutar al inicio y cada 2 segundos
 fetchDeviceData();
 setInterval(fetchDeviceData, 2000);
+
 
